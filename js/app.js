@@ -33,7 +33,14 @@ font color: #33cc33
 border: 3px dotted rosybrown
 padding: 10px
 */
+function bling(){
+    worm.style.fontSize = '28px';
+    worm.style.color = '#33cc33';
+    worm.style.border = '3px dotted rosybrown';
+    worm.style.padding = '10px';
 
+
+}
 
 
 //4. Beet Cakes by Dre
