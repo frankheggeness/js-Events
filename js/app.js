@@ -48,7 +48,14 @@ function bling(){
 
 var missing = "1 Big ol' beet";
 
+recipe.addEventListener('click',showIng)
+function showIng(){
+    var newLi = document.createElement('li');
+    newLi.className = 'mix';
+    newLi.innerHTML = 'Lots of Beets';
+    ingredient.appendChild(newLi);
 
+}
 
 //5. Pug Life
 /*Add an event listener to the img element `puggy` that will rollover a new image after hovering over it.*/
