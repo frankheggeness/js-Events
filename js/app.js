@@ -97,6 +97,45 @@ var grimace = {
     hobbies: ['knitting', 'scrapbooking', 'mixed martial arts']
 };
 
+bio.addEventListener('click',grimBio);
+
+// function grimBio(){
+//     for (i=0; i<Object.keys(grimace).length ; i++){
+//     var grimStuff = document.createElement('div');
+//     grimStuff.className = 'grimstuff';
+//     var grimKey = Object.keys(grimace)[i];
+    
+//     grimStuff.innerHTML = grimace.grimKey
+//     bio.appendChild(grimStuff);
+//     }
+// }
+
+function grimBio(){
+    var grimName = document.createElement('div');
+    grimName.id = 'grimName';
+    grimName.innerHTML = 'Name: ' + grimace.name;
+    bio.appendChild(grimName);
+
+    var grimAge = document.createElement('div');
+    grimAge.id = 'grimAge';
+    grimAge.innerHTML = 'Age: ' + grimace.age;
+    bio.appendChild(grimAge);
+
+    var grimSign = document.createElement('div');
+    grimSign.id = 'grimSign';
+    grimSign.innerHTML = 'Sign: ' + grimace.sign;
+    bio.appendChild(grimSign);
+
+    var grimBlood = document.createElement('div');
+    grimBlood.id = 'grimBlood';
+    grimBlood.innerHTML = 'Bloodtype: ' + grimace.bloodtype;
+    bio.appendChild(grimBlood);
+
+    var grimHobbies = document.createElement('div');
+    grimHobbies.id = 'grimHobbies';
+    grimHobbies.innerHTML = 'Hobbies: ' + grimace.hobbies;
+    bio.appendChild(grimHobbies);
+}
 
 //8. Fortune Cookie
 /*Add an event listener to the `fortune` button that will generate a random message in the `showFortune` h3 element after clicking on the button*/
